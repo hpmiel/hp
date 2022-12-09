@@ -1,5 +1,5 @@
 <!--begin::Header-->
-<div id="kt_header" style="" class="header align-items-stretch justify-content-end">
+<div id="kt_header" style="" class="header align-items-stretch">
 	<!--begin::Brand-->
 	<div class="header-brand">
 		<!--begin::Logo-->

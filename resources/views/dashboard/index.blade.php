@@ -1,4 +1,5 @@
 @extends('layout.index')
+@section('body')
 
-
-Dashboard
+<h1>Dashboard</h1>
+@endsection
