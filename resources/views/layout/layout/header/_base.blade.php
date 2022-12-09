@@ -45,6 +45,6 @@
 		<!--end::Aside toggle-->
 	</div>
 	<!--end::Brand-->
-	<!--layout-partial:layout/header/__toolbar.blade.php-->
+    @include('layout.layout.header.__toolbar')
 </div>
 <!--end::Header-->
