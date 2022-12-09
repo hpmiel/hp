@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" direction="rtl" dir="rtl" style="direction: rtl" >
 <!--begin::Head-->
 <head>
 
