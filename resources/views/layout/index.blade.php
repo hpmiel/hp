@@ -34,24 +34,31 @@ License: For each use you must have a valid license purchased only from above li
 	<!--end::Head-->
 	<!--begin::Body-->
 	<body id="kt_body" class="page-loading-enabled page-loading header-tablet-and-mobile-fixed aside-enabled">
-		<!--layout-partial:partials/theme-mode/_init.html-->
+		@include('layout.partials.theme-mode._init')
+    <!--layout-partial:partials/theme-mode/_init.html-->
 		<!--layout-partial:partials/_loader.html-->
 		<!--begin::Main-->
 		<!--begin::Root-->
 		<div class="d-flex flex-column flex-root">
 			<!--begin::Page-->
 			<div class="page d-flex flex-row flex-column-fluid">
+                @include('layout.layout.aside._base')
 				<!--layout-partial:layout/aside/_base.blade.php-->
 				<!--begin::Wrapper-->
 				<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
-					<!--layout-partial:layout/header/_base.blade.php-->
+                    @include('layout.layout.header._base')
+                    <!--layout-partial:layout/header/_base.blade.php-->
 					<!--begin::Content-->
 					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Post-->
 						<div class="post d-flex flex-column-fluid" id="kt_post">
-							<!--layout-partial:layout/_content.blade.php-->
+                            <div id="kt_content_container" class="container-fluid">
+                            @yield('body')
+                            </div>
+
 						</div>
 						<!--end::Post-->
+                            @include('layout.layout._footer')
 					</div>
 					<!--end::Content-->
 					<!--layout-partial:layout/_footer.blade.php-->
