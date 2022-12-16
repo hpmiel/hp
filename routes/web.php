@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-       return view('dashboard.index');
+    return view('dashboard.index');
 });
+
+
+Route::get('/user', [\App\Http\Controllers\UserController::class, 'index']);
+Route::get('/user/create', [\App\Http\Controllers\UserController::class, 'create']);
+Route::post('/user/create', [\App\Http\Controllers\UserController::class, 'store']);
