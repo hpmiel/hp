@@ -14,6 +14,20 @@ class GroupSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $groupAdmin = new Group();
+        $groupAdmin->key='admin';
+        $groupAdmin->name='گروه مدیر';
+        $groupAdmin->description='گروه مدیریت کل پنل';
+        $groupAdmin->save();
+
+
+
+
+        $groupAnbar= new Group();
+        $groupAnbar->key='anbar';
+        $groupAnbar->name='گروه انبار';
+        $groupAnbar->description='گروه انبار ';
+        $groupAnbar->save();
+
     }
 }
