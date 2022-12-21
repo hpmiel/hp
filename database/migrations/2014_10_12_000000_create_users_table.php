@@ -15,12 +15,21 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('group_id',false,true);
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('email',225)->unique();
+            $table->timestamp('email_verified_at')->unique()->nullable();
+            $table->string('password')->nullable();
+            $table->string('cellphone')->nullable();
             $table->timestamps();
+
+
+            $table->foreign('group_id')
+                ->on('group')
+                ->references('id')
+                ->cascadeOnDelete()
+                ->cascadeOnUpdate();
+
         });
     }
 
