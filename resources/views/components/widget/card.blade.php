@@ -1,6 +1,7 @@
 @props([
     'padding' => '',
     'header' => '',
+    'header_toolbar' => null,
 ])
 
 <div class="card border border-2 border-secondary">
