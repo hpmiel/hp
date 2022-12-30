@@ -18,7 +18,7 @@ return new class extends Migration
             $table->bigInteger('group_id',false,true);
             $table->string('name');
             $table->string('email',225)->unique();
-            $table->timestamp('email_verified_at')->unique()->nullable();
+            $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->string('cellphone')->nullable();
             $table->timestamps();
