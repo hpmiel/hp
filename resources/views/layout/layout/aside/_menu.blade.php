@@ -7,27 +7,37 @@
      data-kt-scroll-offset="5px">
     <!--begin::Menu-->
 
-    <div class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500" id="#kt_aside_menu" data-kt-menu="true">
+    <div
+        class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500"
+        id="#kt_aside_menu" data-kt-menu="true">
 
-       <x-menu-item title="کاربر پروفایل" url="{{url('')}}"/>
-       <x-menu-item title="پروژه ها" url="{{url('')}}" />
-        <x-menu-item title="کالا" url="{{url('')}}"/>
-        <x-menu-item title="مدیر پرونده" url="{{url('')}}"/>
-       <x-menu-item title="شرکت" url="{{url('')}}"/>
-        <x-menu-item title="مخاطبین" />
-       <x-menu-item title=کاتالوگ" url="{{url('')}}"/>
-       <x-menu-item title="مدیریت فاکتور" url="{{url('')}}"/>
-        <x-menu-item title="مدیر صندوق" url="{{url('')}}"/>
-       <x-menu-item title="اسناد" url="{{url('')}}"/>
-        <x-menu-item title="تامین کنندگان" url="{{url('')}}"/>
-       <x-menu-item title="صندوق پیام" url="{{url('')}}"/>
-       <x-menu-item title="چت" url="{{url('')}}"/>
+
+        <x-menu-dropdown title="کاربر ها">
+            <x-menu-item title="کاربر پروفایل" url="{{url('')}}"/>
+            <x-menu-item title="پروژه ها" url="{{url('')}}"/>
+        </x-menu-dropdown>
+
+        <x-menu-dropdown title="تنظیمات ">
+            <x-menu-item title="کاربر پروفایل" url="{{url('')}}"/>
+            <x-menu-item title="پروژه ها" url="{{url('')}}"/>
+            <x-menu-item title="کالا" url="{{url('')}}"/>
+            <x-menu-item title="مدیر پرونده" url="{{url('')}}"/>
+            <x-menu-item title="شرکت" url="{{url('')}}"/>
+            <x-menu-item title="مخاطبین"/>
+            <x-menu-item title=کاتالوگ" url="{{url('')}}"/>
+        </x-menu-dropdown>
+
+        <x-menu-dropdown title="خرید و فروش ">
+            <x-menu-item title="مدیریت فاکتور" url="{{url('')}}"/>
+            <x-menu-item title="مدیر صندوق" url="{{url('')}}"/>
+            <x-menu-item title="اسناد" url="{{url('')}}"/>
+            <x-menu-item title="تامین کنندگان" url="{{url('')}}"/>
+        </x-menu-dropdown>
+        
+        <x-menu-item title="صندوق پیام" url="{{url('')}}"/>
+        <x-menu-item title="چت" url="{{url('')}}"/>
         <x-menu-item title="تقویم" url="{{url('')}}"/>
 
 
-
-
-
-
     </div>
-    </div>
+</div>
