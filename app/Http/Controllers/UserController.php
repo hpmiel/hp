@@ -30,6 +30,7 @@ class UserController extends Controller
     }
 
     // /user/create [ POST ]
+    // test
     public function store(Request $request)
     {
 //        if ($password !== $repassword) {
@@ -67,5 +68,8 @@ class UserController extends Controller
     // /user/200/delete
     public function destroy($id)
     {
+        $user = User::find($id);
+        $user->delete();
+        return redirect('/user');
     }
 }

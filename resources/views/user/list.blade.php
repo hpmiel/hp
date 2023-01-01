@@ -311,7 +311,7 @@
                                 <x-widget.button color="warning">
                                     ویرایش
                                 </x-widget.button>
-                                <x-widget.button color="danger">
+                                <x-widget.button color="danger" href="{{ url('user/' . $user->id . '/delete') }}">
                                     حذف
                                 </x-widget.button>
                             </td>
